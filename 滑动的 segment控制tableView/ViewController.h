@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDataSource , UITableViewDelegate>
 
-
+@property (nonatomic , strong) UITableView *tableView;
+@property (nonatomic , strong) UIScrollView *scrollView;
+@property (nonatomic , strong) UISegmentedControl *segment;
 @end
 
